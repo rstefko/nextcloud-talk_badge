@@ -12,6 +12,7 @@ If your instance enforces app signing, this development ZIP is unsigned and must
 
 ## How it works
 
+- Runs only on Talk pages.
 - Calls `/ocs/v2.php/apps/spreed/api/v4/room` using the logged-in session.
 - Sums each conversation's `unreadMessages`.
 - Refreshes on load, focus, visibility change, reconnect, and every 60 seconds while visible.

@@ -1,5 +1,6 @@
 (function () {
     'use strict';
+    if (!/(?:^|\/)apps\/spreed(?:\/|$)/.test(window.location.pathname)) return;
     if (!('setAppBadge' in navigator) || !('clearAppBadge' in navigator)) return;
 
     const intervalMs = 60000;

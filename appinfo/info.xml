@@ -4,7 +4,7 @@
   <name>Talk Badge</name>
   <summary>Shows unread Nextcloud Talk messages on supported installed app icons.</summary>
   <description>Adds App Badging API support for Nextcloud Talk unread messages.</description>
-  <version>0.1.0</version>
+  <version>0.1.2</version>
   <licence>agpl</licence>
   <author>Roman Stefko</author>
   <namespace>TalkBadge</namespace>

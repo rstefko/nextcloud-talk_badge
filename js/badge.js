@@ -1,6 +1,6 @@
 (function () {
     'use strict';
-    if (!/(?:^|\/)apps\/spreed(?:\/|$)/.test(window.location.pathname)) return;
+    if (!/(?:^|\/)(?:apps\/spreed|call)(?:\/|$)/.test(window.location.pathname)) return;
     if (!('setAppBadge' in navigator) || !('clearAppBadge' in navigator)) return;
 
     const intervalMs = 60000;
@@ -40,9 +40,9 @@
             }, 0);
 
             if (count !== lastCount) {
-                lastCount = count;
                 if (count > 0) await navigator.setAppBadge(count);
                 else await navigator.clearAppBadge();
+                lastCount = count;
             }
         } catch (error) {
             if (error.name !== 'AbortError') console.debug('[Talk Badge]', error);

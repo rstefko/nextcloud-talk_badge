@@ -1,4 +1,4 @@
-# Talk Badge 0.1.0
+# Nextcloud Talk Badge
 
 Client-side Nextcloud app that totals `unreadMessages` across Talk conversations and updates the installed Chrome PWA icon through the Badging API.
 
@@ -7,8 +7,6 @@ Client-side Nextcloud app that totals `unreadMessages` across Talk conversations
 1. Extract `talk_badge` into your Nextcloud `custom_apps` directory.
 2. Enable it with `occ app:enable talk_badge` or in **Apps > Your apps**.
 3. Reload the installed Chrome PWA.
-
-If your instance enforces app signing, this development ZIP is unsigned and must be signed using your instance's app-signing process.
 
 ## How it works
 
